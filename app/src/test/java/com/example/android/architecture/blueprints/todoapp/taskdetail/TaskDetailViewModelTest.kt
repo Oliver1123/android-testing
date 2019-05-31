@@ -77,11 +77,6 @@ class TaskDetailViewModelTest {
     }
 
     @Test
-    fun deleteTask() {
-        // TODO
-    }
-
-    @Test
     fun completeTask() {
         taskDetailViewModel.start(task.id)
 
@@ -157,7 +152,7 @@ class TaskDetailViewModelTest {
     }
 
     @Test
-    fun deleteTask_solution() {
+    fun deleteTask() {
         assertThat(tasksRepository.tasksServiceData.containsValue(task)).isTrue()
         taskDetailViewModel.start(task.id)
 
